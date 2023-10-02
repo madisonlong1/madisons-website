@@ -1,0 +1,83 @@
+.body1 {
+
+    background-image: url("../assets/newMountain.jpg");
+    background-size: cover;
+    background-position-x: center;
+      
+}
+
+.body_welcomeHolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30%;
+    margin-top: 10px;
+}
+
+
+.body_welcome {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.body_welcomeMessage {
+    display: flex;
+    /* align-self: flex-start; */
+    font-weight: bold;
+    width: 75%;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.body1-imageHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 75%;
+}
+
+
+
+/* .body1-techImage {
+    display: flex;
+    max-width: 300px;
+    border-radius: 30px;
+    margin-inline: 50px;
+}
+
+.body1-gradPhoto {
+    display: flex;
+    max-width: 300px;
+    border-radius: 30px;
+    margin-inline: 50px;
+}
+
+.body1-aiPhoto{ 
+    display: flex;
+    max-width: 300px;
+    border-radius: 30px;
+    margin-inline: 50px;
+}
+
+.body1-aiChip{ 
+    display: flex;
+    max-width: 300px;
+    border-radius: 30px;
+    margin-inline: 50px;
+    height: 30px;
+} */
+
+.body1-protag{ 
+    display: flex;
+    max-width: 300px;
+    border-radius: 30px;
+    margin-left: 100%;
+    height: 200px;
+}
+
+.body1-protag:hover {
+    filter: brightness(1.4);
+}

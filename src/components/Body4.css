@@ -1,0 +1,89 @@
+
+
+
+
+
+.body4 {
+    display: flex;
+    background-image: url('../assets/ucsbCampusNight.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 1%;
+    flex-direction: row;
+    align-items: left;
+    min-height: 100vh;
+    min-width: 100vh;
+    /* width: 100%; */
+    /* position: relative; */
+    
+
+}
+
+.body4-paragraphHolder {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: flex-start;
+    /* max-width: 40%; */
+    margin: 60px;
+
+}
+
+
+.body4-pargaraphHeader {
+    display: flex;
+    margin-left: 2.5%;
+    color: black;
+    align-self: auto;
+    text-decoration-line: underline;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.body4-text {
+    display: flex;
+    align-self: flex-start;
+    color: black;
+    font-size: 20px;
+    margin-left: 40px;
+    max-width: 60%;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.body4-imageConatiner {
+    display: flex;
+    flex-direction: row;
+ 
+
+}
+
+.body4-image1 {
+    display: flex;
+    ;
+    width: 300px;
+    height: 225px;
+    border-radius: 30px;
+    margin-inline: 50px;
+    margin: 60px;
+    margin-left: auto;
+    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.body4-image1:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    
+ }
+
+ .body4-image2 {
+    display: flex;
+    ;
+    width: 200px;
+    height: 225px;
+    border-radius: 30px;
+    margin-inline: 50px;
+    margin: 60px;
+    margin-left: auto;
+    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); */
+}

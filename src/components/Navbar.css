@@ -1,0 +1,261 @@
+*::before {
+    margin: 0;
+    box-sizing: boarder-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: darkgrey;
+}
+
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #000;
+    height: 8vh;
+    box-shadow: 0 2px 0 rgba(245, 243, 243, 0.1);
+}
+
+/* nav a { Part of the strange html only tutorial 
+
+}
+
+nav .animation {
+    position: absolute;
+    height: 50px;
+    top: 0;
+    z-index: 0;
+    background: #1abc9c;
+    width: 100px;
+    border-radius: 8px;
+} */
+
+.home {
+    color: white;
+    margin-left: 10px;
+}
+
+.personal {
+    color: white;
+
+}
+
+.nav_item {
+
+}
+
+.nav_link {
+    color: lightgray;
+    font-size: 20px;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.navLink.active {
+    color: white;
+}
+
+.nav_link.active::after {
+    opacity: 1;
+}
+
+.nav_link:hover,
+.nav_link:focus {
+    color: white;
+    transform: scale(1.1);
+}
+
+.nav_link::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(0, 183, 255);
+    position: absolute;
+    
+    left: 50%; /* Center the starting position */
+    transform: translateX(-50%); /* Ensure it remains centered */
+    bottom: -8px;
+    opacity: 0;
+    transition: all 0.2s, width 0.4s;
+    pointer-events: none;
+}
+
+.nav_link:hover::after, 
+.nav_link:focus::after{
+    opacity: 1;
+}
+
+.nav_link:hover::after,
+.nav_link:focus::after,
+.nav_link.active::after {
+    width: 100%;
+    opacity: 1;
+}
+
+
+ /* ##################################*/
+.nav-leftItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+
+}
+.nav_brand {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: left 30px;
+    transition: all 0.2s, width 0.4s;
+}
+
+.nav_brand:hover {
+    filter: brightness(2.0);
+    transform: scale(1.01);
+
+}
+
+.nav-earthIcon {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    display:flex;
+    height: 40px;
+    margin-right: 35px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-earthIcon:hover {
+    filter: brightness(2.0);
+    transform: scale(1.2);
+}
+ /* ##################################*/
+.nav_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+
+}
+
+.nav_toggler div {
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: white;
+    transition: 0..4s ease-in;
+}
+
+.nav_toggler {
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .nav_toggler {
+        display: block;
+    }
+    .nav_menu {
+        position: fixed;
+        top: 7vh;
+        right: 0;
+        width: 20%;
+        height: 93vh;
+        background: rgb(0,28,73);
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+}
+
+.nav_active {
+    transform: translateX(0);
+}
+
+/* Toggler Icon Animation */
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-4px, -5px);
+}
+
+
+
+.nav_item {
+    display: flex;
+    margin-left: 20px;
+}
+
+.nav-socialMediaContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-mediaIconLinkedin {
+    display: flex;
+    color: rgb(0, 119, 181);
+    height: 30px;
+    padding: 6px;
+}
+
+.nav-mediaIconFacebook {
+    display: flex;
+    color: rgb(66, 103, 178);
+    height: 30px;
+    padding: 6px;
+}
+
+.nav-mediaIconInstagram {
+    display: flex;
+    color: rgb(131, 58, 180);
+    height: 30px;
+    padding: 6px;
+}
+
+.nav-mediaIconEmail {
+    display: flex;
+    color: lightgrey;
+    height: 30px;
+    padding: 6px;
+}
+
+
+
+.nav-mediaIconLinkedin:hover {
+    filter: brightness(2.0);
+}
+
+.nav-mediaIconFacebook:hover {
+    filter: brightness(2.0);
+}
+
+.nav-mediaIconInstagram:hover {
+    filter: brightness(2.0);
+}
+
+.nav-mediaIconEmail:hover {
+    filter: brightness(2.0);
+}

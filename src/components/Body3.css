@@ -1,0 +1,52 @@
+.body3 {
+    display: flex;
+    background-image: url('../assets/purpleBackround.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 1%;
+    flex-direction: row;
+    align-items: left;
+    min-height: 100vh;
+    min-width: 100%;
+
+}
+
+.body3-topDescription {
+    display: flex;
+    align-self: normal;
+    margin-top: 65%;
+    color: rgb(253, 247, 184);
+    margin-left: 5%;
+    margin-bottom: 8px;
+
+}
+
+.body3-bottomDescription {
+    color: darkslategrey;
+    margin-top: 5px;
+}
+
+.body1-buttonGroup {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.body3-button {
+    width: 300px;
+    background-color: rgb(236, 149, 233);
+    padding: 1rem;
+    color: black;
+    border: 3px solid grey;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-right: auto;
+    margin-top: 65%;
+    margin-right: 15%;
+}
